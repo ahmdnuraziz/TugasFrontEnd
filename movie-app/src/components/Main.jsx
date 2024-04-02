@@ -1,12 +1,10 @@
 import Profile from "./Profile";
 
-const Main = ()=>{
+const Main = (props)=>{
     return (
-    <main>
-        <Profile name="Aziz" role="Fronend"/>
-        <Profile name="Surya" role="Backend"/>
-        <Profile name="Manarul" role="Hosting"/>
-    </main>
+        <main>
+        {props.children}
+        </main>
     )
 }
 
