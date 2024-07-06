@@ -1,0 +1,146 @@
+/* Small Screen */
+.container {
+    margin: 1rem;
+}
+
+.movies {
+    margin: 5rem 0;
+    text-align: center;
+}
+
+.movies__title {
+    margin-bottom: 1rem;
+    font-size: 2.44rem;
+    color: #1abc9c;
+}
+
+.movie__container {
+    display: flex;
+    flex-direction: column;
+}
+
+.movie {
+    margin-bottom: 1rem;
+}
+
+.movie__image {
+    border-radius: 20px;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.movie__title {
+    color: #1abc9c;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.movie__date {
+    color: #64748b;
+}
+
+/* Medium Screen */
+@media(min-width: 768px) {
+    .movie__container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .movie {
+        flex-basis: 50%;
+    }
+}
+
+/* Large Screen */
+@media(min-width: 992px) {
+    .container {
+        max-width: 1200px;
+        margin: 3rem auto;
+    }
+
+    .movie {
+        flex-basis: 25%;
+        padding: 1rem;
+    }
+}
+
+/* Page Detail */
+
+.detail {
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.poster {
+    margin: 0;
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+}
+
+.poster img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.info {
+    padding: 20px;
+    text-align: center;
+}
+
+.info h2 {
+    color: #06D6A0;
+    font-size: 2rem;
+}
+
+.info h3 {
+    color: #118AB2;
+    font-size: 1.5rem;
+}
+
+.info p {
+    color: #64748B;
+    font-size: 1rem;
+}
+
+.hero__button {
+    background-color: #06D6A0;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+@media (min-width: 768px) {
+    .detail {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+
+    .info {
+        text-align: left;
+        padding-left: 2rem;
+        max-width: 60%;
+    }
+
+    .info h2 {
+        font-size: 3rem;
+    }
+
+    .info h3 {
+        font-size: 2rem;
+    }
+
+    .info p {
+        margin-bottom: 20px;
+        font-size: 1.25rem;
+    }
+}
