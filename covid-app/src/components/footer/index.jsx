@@ -1,4 +1,3 @@
-
 import { ContainerFooter, StyledLink } from "./StyleFooter";
 
 function Footer() {
